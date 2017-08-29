@@ -8,7 +8,6 @@ git clone git clone https://github.com/MujtabaKably/react-redux-skeleton.git
 cd react-redux-skeleton
 npm install
 npm run dev (to run webpack dev server)
-npm run server ( to run express server)
 ```
 
 ### note
@@ -40,14 +39,14 @@ The following tasks should be done to package.json by the end users
 [ ] Change the scripts as desired
 
 ## Directory structure
-###public
+### public
 Contains all the client side implementation of react
 
 ### public/src 
--main.js - Start point of the your react application
--store.js - configured redux store with [redux-thunk](https://www.npmjs.com/package/redux-thunk) and [redux-logger](https://www.npmjs.com/package/redux-logger) middlewares.
--**modules** - contains all your modules. Already consist of the app module. Preferred place to add your modules
--**app** - basic application setup with routes and google's [material-ui](http://www.material-ui.com/#/) 
+- main.js - Start point of the your react application
+- store.js - configured redux store with [redux-thunk](https://www.npmjs.com/package/redux-thunk) and [redux-logger](https://www.npmjs.com/package/redux-logger) middlewares.
+- **modules** - contains all your modules. Already consist of the app module. Preferred place to add your modules
+- **app** - basic application setup with routes and google's [material-ui](http://www.material-ui.com/#/) 
 
 ### public/dist
 It contains all the files that will be served to your clients. Babelified and minified version of your source code.
