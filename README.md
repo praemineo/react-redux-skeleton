@@ -16,7 +16,6 @@ npm run server ( to run express server)
 > Basic understanding of [webpack](https://webpack.js.org/) is required
 
 
-
 ## Usage
 
 ### package.json
@@ -44,14 +43,14 @@ The following tasks should be done to package.json by the end users
 ###public
 Contains all the client side implementation of react
 
-### src 
+### public/src 
 -main.js - Start point of the your react application
 -store.js - configured redux store with [redux-thunk](https://www.npmjs.com/package/redux-thunk) and [redux-logger](https://www.npmjs.com/package/redux-logger) middlewares.
 -**modules** - contains all your modules. Already consist of the app module. Preferred place to add your modules
 -**app** - basic application setup with routes and google's [material-ui](http://www.material-ui.com/#/) 
 
-### dist
-It contains all the files that will be served to your clients 
+### public/dist
+It contains all the files that will be served to your clients. Babelified and minified version of your source code.
 
 ## License
 #### MIT License
