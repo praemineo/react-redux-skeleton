@@ -39,11 +39,11 @@ npm run server ( to run express server). Run npm run build before running this c
 }
 ```
 The following tasks should be done to package.json by the end users
-[ ] Change the name
-[ ] \(Optional) Change the version
-[ ] Add a description
-[ ] Change the **main** attribute (currently set for `webpack.config.js`)
-[ ] Change the scripts as desired
+- [ ] Change the name
+- [ ] \(Optional) Change the version
+- [ ] Add a description
+- [ ] Change the **main** attribute (currently set for `webpack.config.js`)
+- [ ] Change the scripts as desired
 
 ## Directory structure
 ### src 
