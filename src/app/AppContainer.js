@@ -1,11 +1,10 @@
 import React from 'react';
 
-import { connect ,Provider } from "react-redux";
-import { Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 
-import Routes from './Routes.js';
-import Layout from './components/Layout.js';
+import Routes from './Routes';
+import Layout from './components/Layout';
 
 class App extends React.Component {
   render() {
@@ -21,4 +20,5 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default App;
+

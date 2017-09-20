@@ -1,5 +1,3 @@
-'use strict';
-
 const express = require('express');
 const compression = require('compression');
 const bodyParser = require('body-parser');
@@ -10,7 +8,6 @@ const cors = require('cors');
 const responseTime = require('response-time');
 
 module.exports.init = function init() {
-
   const app = express();
   require.cache.userObject = { app };
   require.cache.userObject.appPath = __dirname;
@@ -33,23 +30,22 @@ module.exports.init = function init() {
   // app.use('/', appRouter);
 
   // Public Folder binding
-  app.use(express.static(__dirname + "/dist"));
+  app.use(express.static(`${__dirname}/dist`));
 
-  app.use(function (req, res) {
-    res.sendFile(path.resolve(__dirname,'./dist/index.html'));
+  app.use((req, res) => {
+    res.sendFile(path.resolve(__dirname, './dist/index.html'));
   });
 
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname,'./public/index.html'));
+    res.sendFile(path.resolve(__dirname, './public/index.html'));
   });
 
   app.listen(process.env.PORT || 5050)
-    .on('error', error => {
-      console.log(error)
+    .on('error', (error) => {
+      console.log(error);
     })
     .on('listening', () => {
-      console.log(`listening on port ${process.env.PORT || 5050}`)
+      console.log(`listening on port ${process.env.PORT || 5050}`);
     });
-
 };
 

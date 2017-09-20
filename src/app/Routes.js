@@ -5,9 +5,10 @@ import { Route, Switch } from 'react-router-dom';
 
 class Routes extends React.Component {
   render() {
-    return <Switch>
-				<Route exact path={getRoutes('home')} component={null}/>
-	   		</Switch>
+    return (<Switch>
+      <Route exact path={getRoutes('home')} component={null} />
+    </Switch>
+    );
   }
 }
 
