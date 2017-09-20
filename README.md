@@ -10,7 +10,7 @@ npm install
 npm run dev (to run webpack dev server)
 npm run build - to build dist folder for development purpose
 npm run build:prod - to build production ready dist folder
-npm run server ( to run express server). Run npm run build before running this command
+npm run server ( to run express server). Run (npm run build) command before running this.
 ```
 
 ### note
