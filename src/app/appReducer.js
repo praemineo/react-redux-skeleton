@@ -5,7 +5,7 @@ const defaultState = {
 };
 
 const appReducer = (state = defaultState, action, rootState) => {
-  const newState = Object.assign({}, state);
+  const newState = { ...state };
 
   switch (action.type) {
     default:

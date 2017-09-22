@@ -1,4 +1,4 @@
-const getRoutes = (name, data) => {
+const getRoutes = (name, params) => {
   const baseUrl = '';
 
   const routeObject = {

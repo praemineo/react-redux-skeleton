@@ -1,14 +1,13 @@
 import React from 'react';
 import Subheader from 'material-ui/Subheader';
 import { push } from 'react-router-redux';
-import MenuListItem from './MenuListItem';
 import ActionHome from 'material-ui/svg-icons/action/home';
 import ActionInfo from 'material-ui/svg-icons/action/info';
 import ActionHelp from 'material-ui/svg-icons/action/help';
 import CommunicationEmail from 'material-ui/svg-icons/communication/email';
 import CommunicationContact from 'material-ui/svg-icons/communication/contacts';
-
-import appActions from '../../appActions.js'
+import MenuListItem from './MenuListItem';
+import appActions from '../../appActions';
 
 class NavigationMenuItems extends React.Component {
   handleHomeClick() {
@@ -32,17 +31,37 @@ class NavigationMenuItems extends React.Component {
   }
 
   render() {
-    return <div>
-			<Subheader><b>Navigatation</b></Subheader>
-			<MenuListItem primaryText="Home" leftIcon={<ActionHome />} onClick={this.handleHomeClick.bind(this)}/>
-			<MenuListItem primaryText="Player" show="players" leftIcon={<CommunicationContact />} />
-			<MenuListItem primaryText="About" leftIcon={<ActionInfo />} onClick={this.handleAboutClick.bind(this)}/>
-			<MenuListItem primaryText="Updates" leftIcon={<ActionHelp />} onClick={this.handleUpdatesClick.bind(this)}/>
-			<MenuListItem primaryText="Contact Me" leftIcon={<CommunicationEmail />} onClick={this.handleContactMeClick.bind(this)}/>
-		   </div>
+    return (
+      <div>
+        <Subheader><b>Navigatation</b></Subheader>
+        <MenuListItem 
+          primaryText="Home"
+          leftIcon={<ActionHome />}
+          onClick={this.handleHomeClick.bind(this)}
+        />
+        <MenuListItem
+          primaryText="Player"
+          show="players"
+          leftIcon={<CommunicationContact />}
+        />
+        <MenuListItem
+          primaryText="About"
+          leftIcon={<ActionInfo />}
+          onClick={this.handleAboutClick.bind(this)}
+        />
+        <MenuListItem
+          primaryText="Updates"
+          leftIcon={<ActionHelp />}
+          onClick={this.handleUpdatesClick.bind(this)}
+        />
+        <MenuListItem
+          primaryText="Contact Me"
+          leftIcon={<CommunicationEmail />}
+          onClick={this.handleContactMeClick.bind(this)}
+        />
+      </div>
+    );
   }
 }
 
 export default NavigationMenuItems;
-
-

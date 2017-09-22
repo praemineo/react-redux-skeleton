@@ -21,7 +21,7 @@ class Layout extends React.Component {
       <MuiThemeProvider muiTheme={theme}>
         <div>
           <Header />
-          <h1> Welcome to react-redux-skeleton</h1>
+          <h1> Welcome to react-redux-skeleton by team @Preeminence</h1>
           <div>
             { this.props.children }
           </div>

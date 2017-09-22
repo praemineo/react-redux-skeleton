@@ -1,6 +1,8 @@
 // dependancies
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+// css imports
 import './styles/bootstrap.min.css';
 import './styles/main.css';
 

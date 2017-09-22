@@ -10,13 +10,15 @@ class App extends React.Component {
   render() {
     const store = this.props.store;
 
-    return <Provider store={store} >
-	       		<ConnectedRouter history={this.props.history} >
-					<Layout >
-						<Routes/>
+    return (
+      <Provider store={store}>
+		 		<ConnectedRouter history={this.props.history}>
+					<Layout>
+						<Routes />
 					</Layout>
-		   		</ConnectedRouter>
-			 </Provider>
+				</ConnectedRouter>
+			</Provider>
+    );
   }
 }
 

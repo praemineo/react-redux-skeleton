@@ -29,9 +29,8 @@ npm run server ( to run express server). Run (npm run build) command before runn
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --inline",
-    "start": "webpack-dev-server -p",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --hot --inline",
     "server": "node index.js",
     "build": "webpack",
     "build:prod": "webpack -p"
@@ -51,6 +50,7 @@ The following tasks should be done to package.json by the end users
 * store.js - configured redux store with [redux-thunk](https://www.npmjs.com/package/redux-thunk) and [redux-logger](https://www.npmjs.com/package/redux-logger) middlewares.
 * **app** - basic application setup with routes and google's [material-ui](http://www.material-ui.com/#/) 
     * **components** - should contain all the different components added to the applicaton
+* **styles** - contains all the style files.
 
 ### dist
 It contains all the files that will be served to your clients 

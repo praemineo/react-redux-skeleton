@@ -6,7 +6,7 @@ class MenuListToggle extends React.Component {
     const style = {
       height: '100%',
       // paddingTop: '12px',
-      width: '165px'
+      width: '165px';
     };
 
     const styles = {
