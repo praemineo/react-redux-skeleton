@@ -4,7 +4,7 @@ A basic **react** skeleton accompanied with **redux** to main your data in a cen
 ## Getting started
 
 ```
-git clone git clone https://github.com/MujtabaKably/react-redux-skeleton.git
+git clone git https://github.com/preeminence/react-redux-skeleton.git
 cd react-redux-skeleton
 npm install
 npm run dev (to run webpack dev server)
