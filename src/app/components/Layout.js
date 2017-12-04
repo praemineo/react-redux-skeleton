@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { ConnectedRouter } from 'react-router-redux';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
@@ -22,12 +23,13 @@ class Layout extends React.Component {
         <div>
           <Header />
           <h1> Welcome to react-redux-skeleton by team @Preeminence</h1>
-          <div>
+          <ConnectedRouter history={this.props.history}>
             { this.props.children }
-          </div>
+          </ConnectedRouter>
           <Footer />
         </div>
-      </MuiThemeProvider>);
+      </MuiThemeProvider>
+    );
   }
 }
 

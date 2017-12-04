@@ -36,10 +36,6 @@ module.exports.init = function init() {
     res.sendFile(path.resolve(__dirname, './dist/index.html'));
   });
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './public/index.html'));
-  });
-
   app.listen(process.env.PORT || 5050)
     .on('error', (error) => {
       console.log(error);
