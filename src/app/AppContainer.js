@@ -1,8 +1,5 @@
 import React from 'react';
-
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
-
 import Routes from './Routes';
 import Layout from './components/Layout';
 
@@ -12,11 +9,9 @@ class App extends React.Component {
 
     return (
       <Provider store={store}>
-		 		<ConnectedRouter history={this.props.history}>
-					<Layout>
+					<Layout history={this.props.history}>
 						<Routes />
 					</Layout>
-				</ConnectedRouter>
 			</Provider>
     );
   }
