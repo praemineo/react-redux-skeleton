@@ -9,9 +9,9 @@ import reducers from './app/combineReducers';
 export const history = createHistory();
 const reduxRouterMW = routerMiddleware(history);
 
-export const setStore = (defaultState = {}) => createStore(
-  reducers,
-  defaultState,
+export const store = createStore(
+  reducers, 
+  {},
   applyMiddleware(thunk, reduxRouterMW, createLogger({
     level: 'info',
     collapsed: true,

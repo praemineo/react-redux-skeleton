@@ -4,16 +4,6 @@ import MenuListToggle from './MenuListToggle';
 
 class MenuListItem extends React.Component {
   render() {
-    const styles = {
-      nestedList: {
-        marginLeft: '10px',
-      },
-      list: {
-        fontWeight: 'bold',
-        textAlign: 'left',
-      },
-    };
-
     const location = window.location.pathname;
     let show = false;
 
@@ -25,7 +15,6 @@ class MenuListItem extends React.Component {
     }
 
     let labelText = this.props.primaryText;
-
     const options = {};
 
     if (this.props.nestedItems) {
@@ -59,5 +48,15 @@ class MenuListItem extends React.Component {
     return show ? render : null;
   }
 }
+
+const styles = {
+  nestedList: {
+    marginLeft: '10px',
+  },
+  list: {
+    fontWeight: 'bold',
+    textAlign: 'left',
+  },
+};
 
 export default MenuListItem;
