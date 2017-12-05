@@ -40,22 +40,12 @@ class NavigationMenuItems extends React.Component {
           onClick={this.handleHomeClick.bind(this)}
         />
         <MenuListItem
-          primaryText="Player"
-          show="players"
-          leftIcon={<CommunicationContact />}
-        />
-        <MenuListItem
           primaryText="About"
           leftIcon={<ActionInfo />}
           onClick={this.handleAboutClick.bind(this)}
         />
         <MenuListItem
-          primaryText="Updates"
-          leftIcon={<ActionHelp />}
-          onClick={this.handleUpdatesClick.bind(this)}
-        />
-        <MenuListItem
-          primaryText="Contact Me"
+          primaryText="Contact Us"
           leftIcon={<CommunicationEmail />}
           onClick={this.handleContactMeClick.bind(this)}
         />

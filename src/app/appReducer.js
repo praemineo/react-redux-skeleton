@@ -1,8 +1,6 @@
 import appActions from './appActions';
 
-const defaultState = {
-
-};
+const defaultState = {};
 
 const appReducer = (state = defaultState, action, rootState) => {
   const newState = { ...state };
